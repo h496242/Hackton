@@ -1,0 +1,254 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header and Navbar */
+header {
+    /* background-color: #000; */
+    padding-top: 20px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px
+}
+.img22 {
+    width: 30%;
+}
+.logo h1 {
+    /* width: 150px; */
+    color: black;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    float: left;
+}
+.pp2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.cta-button a {
+    background-color: transparent;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+/* Banner */
+.banner {
+    /* text-align: center; */
+    padding-top: 20px;
+    /* background-color: #f4f4f4;banner */
+}
+
+.banner h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.1em;
+}
+.banner-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+.banner .btn {
+    /* margin-top: 20px; */
+    background-color: #000;
+    color: #fff;
+    padding: 20px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    /* margin-top: 50px; */
+    
+}
+
+/* Client Logos */
+.clients {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.client-logos img {
+    margin: 0 10px;
+    width: 14%;
+}
+
+/* Services */
+.services {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+.service-box1 {
+    background-color: #f3f3f3;
+    padding: 10px;
+    width: 40%;
+    height: 20vh;
+    border-radius: 10px;
+    text-align: center;
+}
+.service-box {
+    background-color: #b9ff66;
+    padding: 10px;
+    width: 40%;
+    height: 20vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Working Process */
+.process {
+    padding: 40px;
+    background-color: #fff;
+}
+
+.accordion-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.accordion-item h3 {
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+    .contact {
+        padding: 40px;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.footer-container p {
+    margin-bottom: 10px;
+}
+
+.subscribe form {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.subscribe button {
+    background-color: #77ff6c;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+    .cta-button a {
+        display: none;
+    }
+    .service-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner-div {
+        flex-wrap: wrap;
+    }
+    .img22 {
+        width: 100%;
+        padding-top: 50px;
+    }
+    .subscribe form {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
